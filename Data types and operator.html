@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript">
+        var x,y,z;
+        x=10;
+        y=2;
+        z=x+y;
+       document.write("The value is="+z+" <br>");
+       let a,b,c;
+       a=10;
+       b=2;
+       c=a/b;
+       document.write("After divide the value="+c);
+        
+
+
+    </script>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <h1 id="h1"></h1>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    
+    <script>
+    let r,t,u;
+       r=10;
+       t=2;
+       u=r*t;
+       document.getElementById("demo").innerHTML=" <br>  After multiply ="+u;
+
+       var e=1;
+       e++;
+       document.getElementById("h1").innerHTML="Using id of h1 heading="+ e;
+       var j,i,v;
+      j=5;
+      i=2;
+      v=j%i;
+       document.getElementById("p1").innerHTML=" modulous="+ v;
+
+       var e=10;
+       e+=5;
+       document.getElementById("demo").innerHTML="Assignment opeartor= "+ e;
+       let arr=["Jagdish","vivek","Ganesh"];
+       document.getElementById("p1").innerHTML="Printing the array value "+arr[2];
+       let obj={Name:"Ganesh",Lastname:"Sharma",age:"26"};
+       document.getElementById("p2").innerHTML=obj.Name+obj.Lastname+" is "+obj.age+" years old";
+       document.write(typeof 10+"<br>"+typeof "gan");
+       const o=10;
+        //This is error const keyword must inilization when it decleare o=10;   
+        document.getElementById("p2").innerHTML="It is const keyword value "+o;
+
+    </script>
+    
+   
+
+
+   
+
+
+
+</body>
+
+</html>

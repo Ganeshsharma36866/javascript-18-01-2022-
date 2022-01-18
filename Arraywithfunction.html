@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+
+<body>
+    <p id="p"></p>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+    <p id="p6"></p>
+    <p id="p7"></p>
+    <p id="p8"></p>
+    <p id="p9"></p>
+    <p id="p10"></p>
+    <p id="p11"></p>
+    <p id="p12"></p>
+    <p id="p13"></p>
+    <p id="p14"></p>
+    <p id="p15"></p>
+    <p id="p16"></p>
+    <script>
+        const arr = ["ganesh", "jagdish"];
+        document.getElementById("p").innerHTML = arr.length;
+        const arr1 = [1, 8, 5];
+        document.getElementById("p1").innerHTML = "sorting the element " + arr1.sort();
+        document.getElementById("p2").innerHTML = "Accessing the last element in array " + arr1[arr1.length - 1];
+        /*const arry2=["Ganesh","Vivek","robin"];
+        for(var i=0;arry2.length;i++){
+            document.getElementById("p2").innerHTML="By looping Array element print"+arry2;
+        }*/
+
+        let arry4 = ["tcs", "hcl", "wipro", "cadila"];
+        document.getElementById("p3").innerHTML = "pop the elelment in Array= " + arry4.pop();
+        document.getElementById("p4").innerHTML = "Push the elelment in Array= " + arry4.push("cadila");
+
+        document.getElementById("p5").innerHTML = "Shifting the elemetn= " + arry4.shift();
+        document.getElementById("p6").innerHTML = "UNShifting the elemetn= " + arry4.unshift("Jio");
+        document.getElementById("p7").innerHTML = "Final array after operation= " + arry4;
+        document.getElementById("p8").innerHTML = "Converting the arrya into String= " + arry4.toString();
+        let arry5 = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("p9").innerHTML = "Before changing= " + arry5;
+        arry5[0] = "kiwi";
+        document.getElementById("p10").innerHTML = "After changing= " + arry5;
+        document.getElementById("p11").innerHTML = "Adding elements using of Splice Methods= " + arry5.splice(2, 0, "Papaya", "litchi");
+        document.getElementById("p11").innerHTML = "Adding elements using of Splice Methods= " + arry5;
+        document.getElementById("p12").innerHTML = "Select elements using of Slicing Methods= " + arry5.slice(2, 4);
+        document.getElementById("p13").innerHTML = "Select elements using of Slicing single element= " + arry5.slice(2);
+        const points = [40, 100, 1, 5, 25, 10];
+        let r = points.sort(function (a, b) { return a - b });
+        document.getElementById("p14").innerHTML = "sorting of array" + r;
+        const numbers1 = [45, 4, 9, 16, 25];
+
+        let txt = "";
+        numbers1.forEach(myFun);
+        document.getElementById("p15").innerHTML ="Using foreach at once every element call "+ txt;
+
+            function myFun(value) {
+            txt = txt+value + "<br>";
+        }
+
+         let su=numbers1.some(myFun1);
+         document.getElementById("p16").innerHTML="Using some function "+su;
+         function myFun1(value, index, array) {
+            return value > 18;
+        }
+
+
+
+
+
+
+
+
+
+    </script>
+    <!-- <button type="button" onclick="show()">click me</button>-->
+
+
+</body>
+
+</html>

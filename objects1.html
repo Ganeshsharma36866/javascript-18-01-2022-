@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+  <p id="p0">123</p>
+  <p id="p1"></p>
+  <p id="p2"></p>
+  <p id="p3"></p>
+  <p id="p4"></p>
+  <p id="p5"></p>
+  <p id="p6"></p>
+  <p id="p7"></p>
+
+</body>
+  <script>
+    const pe = {
+      firstName: "jagdish",
+      lastName: "Doe",
+      age: 26,
+      eyeColor: "blue"
+    };
+    document.getElementById("p0").innerText = "Before changing= " + pe.firstName;
+
+    const p = new Object();
+    p.firstName = "Ganesh";
+    p.lastName = "Sharma";
+    p.age = 26;
+    p.eyeColor = "blue";
+    document.getElementById("p1").innerHTML = "First name is" + p.firstName;
+    let txt = " ";
+    for (let i in p) {
+      txt = txt+ " "+ p[i];
+    }
+    document.getElementById("p2").innerHTML = "loop for printing object's value" + txt;
+    const myobj = {
+      Name: "ganesh",
+      car: { car1: "BMW", Car2: "Maruti Suzuki" }
+    }
+    document.getElementById("p3").innerHTML = "First obj" + myobj.Name + " <br>" + myobj.car.Car2;
+
+    const person = {
+      firstName: "John",
+      lastName: "Doe",
+      id: 5566,
+      fullname: function () {
+        return this.firstName + " " + this.lastName;
+      }
+    };
+    document.getElementById("p4").innerHTML = person.fullname();
+    const person1 = {
+      firstName: "John",
+      lastName: "Sharma",
+      id: 5566,
+      get lang() {
+        return this.id;
+      }
+
+    };
+    document.getElementById("p5").innerHTML = person1.lang;
+
+    function person2(firstname, lastname, age) {
+      this.firstName = firstName;
+      this.lastName = lastName;
+
+    }
+    const my = new person2("goldy", "sharma", "26");
+    document.getElementById("p6").innerHTML = person2.firstName;
+  </script>
+
+
+</html>
